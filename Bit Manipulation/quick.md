@@ -53,4 +53,10 @@ while (n != 0) {
 }
 ```
 
-
+**when a is a signed int and negative, it seems that**
+`a << 1`
+is not well defined in C++ standard
+*so do* 
+``` cpp
+(unsigned int) a << 1
+```

@@ -83,4 +83,14 @@ for (int diagonal: diag) {
 
 Note: If there is a matrix of N * M then there are N+M-1 diagonals and N+M-1 anti-diagonals.
 
+**Transpose**
+![](content/tranpose.png)
+``` cpp
+// in place
+for (int i=0; i<n; i++) {
+    for (int j=i+1; j<n; j++) {
+        swap(matrix[i][j], matrix[j][i]);
+    }
+}
+```
 
